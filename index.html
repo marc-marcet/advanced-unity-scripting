@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Primary Meta Tags -->
+    <title>Unity Tutorial — Advanced Scripting</title>
+    <meta name="title" content="Unity Tutorial — Advanced Scripting">
+    <meta name="description"
+        content="Here you will learn the bases of making shared scripts, interfaces and abstract classes for shared behaviour in your unity projects">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="og:title" content="Unity Tutorial — Advanced Scripting">
+    <meta property="og:description"
+        content="Here you will learn the bases of making shared scripts, interfaces and abstract classes for shared behaviour in your unity projects">
+    <meta property="og:image" content="images/metaCard.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="twitter:title" content="Unity Tutorial — Advanced Scripting">
+    <meta property="twitter:description"
+        content="Here you will learn the bases of making shared scripts, interfaces and abstract classes for shared behaviour in your unity projects">
+    <meta property="twitter:image" content="images/metaCard.jpg">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar" aria-label="Main navigation">
+        <div class="container">
+
+            <a class="logo-text" href="index.html">Marc Marcet</a>
+
+            <button class="navbar-toggler" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="navlink">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="navlink dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="tutorial.html">Tutorial</a>
+
+                        <!-- TODO -->
+                        <!-- <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="navlink">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="navlink">
+                        <a class="nav-link" href="#">Bibliography</a>
+                    </li>
+
+                </ul>
+                <span class="navlink social-icons">
+                    <span class="fa-stack">
+                        <a href="#">
+                            <i class="fa fa-circle fa-stack-2x dark"></i>
+                            <i class="fa fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#">
+                            <i class="fa fa-circle fa-stack-2x dark"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="home" id="header">
+        <div class="container">
+            <h1 class="headline">C#: <span class="home_text">Unity</span><br>Advanced Scripting</h1>
+            <div class="centered">
+                <p class="description lighter">Here you will learn the bases of making shared scripts, interfaces and
+                    abstract classes for shared behaviour in your unity projects</p>
+            </div>
+            <div class="my-3">
+                <a class="btn" href="tutorial.html">Start Tutorial</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Information -->
+    <section class="information">
+        <div class="container">
+            <div class="row">
+                <div class="cols ideas">
+                    <i class="fa fa-fighter-jet fa-3x p-2"></i>
+                    <h4>Performance</h4>
+                    <p class="lighter">Learn about interfaces and abstract classes, and help avoid code repetition and
+                        help make your game faster!</p>
+                </div>
+                <div class="cols ideas">
+                    <i class="fa fa-recycle fa-3x p-2"></i>
+                    <h4>Adaptability</h4>
+                    <p class="lighter">We will also learn how to save the shared behaviour of your scripts in a variable
+                        that later calls the specific script of each object.</p>
+                </div>
+                <div class="cols ideas">
+                    <i class="fa fa-history fa-3x p-2"></i>
+                    <h4>Save Time</h4>
+                    <p class="lighter">Finally we will learn some trick that will save you precious time when making the
+                        code for your unity project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Demo -->
+    <section class="plans centered" id="plans">
+        <div class="container">
+            <div class="doublecentered">
+                <p>DEMO GAME</p>
+                <h2>Take a look at the game we will be protoyping</h2>
+                <p class="lighter">Integrated player</p>
+            </div>
+            <div class="row">
+                <!-- TODO -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Slider -->
+    <div class="slider-1 testimonial centered">
+        <div class="container">
+            <div class="row">
+                <div class="text-center">
+                    <p>PROJECTS</p>
+                    <h2>Check what the comunity made</h2>
+                    <p class="lighter">Post your project</p>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="colm">
+
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+
+                            </div>
+
+                            <!-- Fletxes -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="columns">
+                    <div class="centered">
+                        <h4>Marc Marcet</h4>
+                    </div>
+                    <p class="lighter">Unity creator, passionate about programming and old school games. Creating C#
+                        Tutorials each week.</p>
+                    <div class="d-flex">
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-facebook-f fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-twitter fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-instagram fa-2x py-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="tutorial.html">
+                                <p>Tutorial</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="gallery.html">
+                                <p>Gallery</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="#">
+                                <p>Bibliography</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="#contact">
+                                <p>Contact</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div>
+                        <h4>Useful Links</h4>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://unity.com/es" target="_blank" rel="noopener noreferrer">
+                                <p>Unity</p>
+                            </a>
+
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://docs.unity3d.com/ScriptReference/" target="_blank"
+                                rel="noopener noreferrer">
+                                <p>Documentation</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://assetstore.unity.com" target="_blank" rel="noopener noreferrer">
+                                <p>Asset Store</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://unity.com/faq" target="_blank" rel="noopener noreferrer">
+                                <p>FAQ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="centered">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <p class="lighter">Get notified for new Unity tutorials!</p>
+                    <div class="centered">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Email"
+                                aria-label="Recipient's email">
+                            <button class="btn-secondary"><i class="fa fa-envelope fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bottom -->
+    <div class="bottom">
+        <div class="container">
+            <div>
+                <p>Copyright © Marc Marcet</p><br>
+                <p>Distributed by: <a href="https://www.uvic.cat/es" target="_blank" rel="noopener noreferrer">Universitat de Vic</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+
+
+    <!-- Scripts -->
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

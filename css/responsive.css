@@ -1,0 +1,153 @@
+/* Container */
+@media (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1320px
+    }
+}
+
+
+/* Columns */
+@media (min-width:992px) {
+    .cols {
+        flex: 0 0 auto;
+        width: 33.33333333%
+    }
+    .colm {
+        flex: 0 0 auto;
+        width: 100%
+    }
+}
+
+
+/* Navbar */
+@media (min-width:992px) {
+    .navbar {
+        flex-wrap: nowrap;
+        justify-content: flex-start
+    }
+    
+    .navbar.top-nav-collapse {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		background-color: var(--primary);
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
+	}
+
+    .navbar .navbar-nav {
+        flex-direction: row
+    }
+    .navbar .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+    .navbar .navbar-nav-scroll {
+        overflow: visible
+    }
+    .navbar .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto
+    }
+    .navbar .navbar-toggler {
+        display: none
+    }
+    .slider-1 .swiper-container {
+        width: 92%
+    }
+    .slider-1 .swiper-button-prev {
+        left: -16px;
+        width: 22px;
+        background-size: 22px 34px
+    }
+    .slider-1 .swiper-button-next {
+        right: -16px;
+        width: 22px;
+        background-size: 22px 34px
+    }
+    .navbar {
+        box-shadow: none;
+        transition: all .2s;
+        padding-top: 1.75rem;
+        background-color: transparent
+    }
+    .offcanvas-collapse {
+        position: static;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        width: auto;
+        padding-right: 0;
+        padding-left: 0;
+        background-color: transparent;
+        overflow-y: visible;
+        visibility: visible
+    }
+    .navbar .navbar-nav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+    .navbar .navlink .nav-link {
+        padding-right: .75rem;
+        padding-left: .75rem
+    }
+    .navbar .social-icons {
+        margin-left: .5rem
+    }
+    .navbar .fa-stack {
+        margin-right: 0;
+        margin-left: .25rem
+    }
+
+    .offcanvas-collapse.open {
+		transform: none;
+	}
+}
+
+@media only screen and (max-width:1024px) {
+    .plans,
+    .testimonial {
+        height: 100%
+    }
+}
+
+@media only screen and (max-width:540px) {
+    h1 {
+        font-size: 30px
+    }
+    .swiper-container {
+        width: 92%
+    }
+    .swiper-button-prev {
+        left: -16px;
+        width: 22px;
+        background-size: 22px 34px
+    }
+    .swiper-button-next {
+        right: -16px;
+        width: 22px;
+        background-size: 22px 34px
+    }
+}
