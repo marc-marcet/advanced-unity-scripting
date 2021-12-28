@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- Primary Meta Tags -->
+    <title>Unity Tutorial — Advanced Scripting</title>
+    <meta name="title" content="Unity Tutorial — Advanced Scripting">
+    <meta name="description"
+        content="Here you will learn the bases of making shared scripts, interfaces and abstract classes for shared behaviour in your unity projects">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="og:title" content="Unity Tutorial — Advanced Scripting">
+    <meta property="og:description"
+        content="Here you will learn the bases of making shared scripts, interfaces and abstract classes for shared behaviour in your unity projects">
+    <meta property="og:image" content="images/metaCard.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://127.0.0.1:5500/index.html">
+    <meta property="twitter:title" content="Unity Tutorial — Advanced Scripting">
+    <meta property="twitter:description"
+        content="Here you will learn the bases of making shared scripts, interfaces and abstract classes for shared behaviour in your unity projects">
+    <meta property="twitter:image" content="images/metaCard.jpg">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body class="dark">
+
+    <div class="nfix"></div>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Text Logo -->
+            <a class="logo-text" href="index.html">Marc Marcet</a>
+
+            <button class="navbar-toggler" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="navlink">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="navlink dropdown">
+                        <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="tutorial.html">Tutorial</a>
+
+                        <!-- <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="article.html">Article Details</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="terms.html">Terms Conditions</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="navlink">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="navlink">
+                        <a class="nav-link" href="bibliography.html">Bibliography</a>
+                    </li>
+
+                </ul>
+                <span class="navlink social-icons">
+                    <span class="fa-stack">
+                        <a href="#">
+                            <i class="fa fa-circle fa-stack-2x dark"></i>
+                            <i class="fa fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#">
+                            <i class="fa fa-circle fa-stack-2x dark"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="title">
+                    <h1>Bibliography</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+    <br>
+
+    <!-- Cards -->
+    <div class="ex-cards-1 pt-3 pb-3 ">
+        <div class="container">
+            <div class="row col-xl-10 offset-xl-1" >
+                    <!-- Card -->
+                    <div class="card col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <span class="fa-stack">
+                                    <span class="fa fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x white-icon">1</span>
+                                </span>
+                                <div class="flex-grow-1">
+                                    <h5><a class="blue" href="https://www.w3schools.com">https://www.w3schools.com</a></h5>
+                                    <p>
+                                        W3Schools is a website for learning web technologies online. Contains HTML, CSS and JavaScript tutorials</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Card -->
+                    <div class="card col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <span class="fa-stack">
+                                    <span class="fa fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x white-icon">2</span>
+                                </span>
+                                <div class="flex-grow-1">
+                                    <h5><a class="blue" href="https://codepen.io">https://codepen.io</a></h5>
+                                    <p>CodePen is a social development environment for front-end designers and developers. Build and deploy a website, show off your work, build test cases to learn and debug, and find inspiration.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Card -->
+                    <div class="card col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
+                                <span class="fa-stack">
+                                    <span class="fa fa-circle fa-stack-2x"></span>
+                                    <span class="fa-stack-1x white-icon">2</span>
+                                </span>
+                                <div class="flex-grow-1">
+                                    <h5><a class="blue" href="https://docs.unity3d.com/Manual/index.html">https://docs.unity3d.com/Manual/index.html</a></h5>
+                                    <p class="lj1">The Unity User Manual helps you learn how to use the Unity Editor and its associated services. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </div>   
+        </div>   
+    </div>
+
+    <br>
+    <br>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="columns">
+                    <div class="centered">
+                        <h4>Marc Marcet</h4>
+                    </div>
+                    <p class="lighter">Unity creator, passionate about programming and old school games. Creating C#
+                        Tutorials each week.</p>
+                    <div class="d-flex">
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-facebook-f fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-twitter fa-2x py-2"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fa fa-instagram fa-2x py-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div>
+                        <h4>Quick Links</h4>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="tutorial.html">
+                                <p>Tutorial</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="gallery.html">
+                                <p>Gallery</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="#">
+                                <p>Bibliography</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="#contact">
+                                <p>Contact</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div>
+                        <h4>Useful Links</h4>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://unity.com/es" target="_blank" rel="noopener noreferrer">
+                                <p>Unity</p>
+                            </a>
+
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://docs.unity3d.com/ScriptReference/" target="_blank"
+                                rel="noopener noreferrer">
+                                <p>Documentation</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://assetstore.unity.com" target="_blank" rel="noopener noreferrer">
+                                <p>Asset Store</p>
+                            </a>
+                        </div>
+                        <div class="linkcntr">
+                            <i class="fa fa-caret-right"></i>
+                            <a href="https://unity.com/faq" target="_blank" rel="noopener noreferrer">
+                                <p>FAQ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="centered">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <p class="lighter">Get notified for new Unity tutorials!</p>
+                    <div class="centered">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter Email"
+                                aria-label="Recipient's email">
+                            <button class="btn-secondary"><i class="fa fa-envelope fa-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bottom -->
+    <div class="bottom">
+        <div class="container">
+            <div>
+                <p>Copyright © Marc Marcet</p><br>
+                <p>Distributed by: <a href="https://www.uvic.cat/es" target="_blank" rel="noopener noreferrer">Universitat de Vic</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="images/up-arrow.png" alt="alternative">
+    </button>
+
+
+    <!-- Scripts -->
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

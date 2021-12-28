@@ -39,7 +39,7 @@
 
 <body class="dark">
 
-
+    <div class="nfix"></div>
     <!-- Navigation -->
     <nav id="navbar" class="navbar" aria-label="Main navigation">
         <div class="container">
@@ -72,7 +72,7 @@
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
                     <li class="navlink">
-                        <a class="nav-link" href="#">Bibliography</a>
+                        <a class="nav-link" href="bibliography.html">Bibliography</a>
                     </li>
 
                 </ul>
@@ -111,21 +111,12 @@
         <div class="container">
             <div class="row">
                 <div>
-                    <p class="lj0">Interfaces are a set of methods, properties, and other members that a target class must implement.</p>
-                    <p class="lj2">Unity uses C#, a type-safe language, meaning it checks if every statement is using Data Types correctly, by using an interface as your Data Type, you are able to access the interface fields on different classes.</p>
-                    <p class="lj0">The interface declaration is pretty similar to a class declaration:</p>
-                    <pre class="lj2"><code>
-    public interface IDamageable
-    {
-        int CurrentHealth { get; } 
-        
-        void ApplyDamage(int damage);
-    }
-                    </code></pre>
+                    <p class="lj0">Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Last sentence of words thus better.</p>
+                    <p class="lj2">Ye on properly handsome returned throwing am no whatever. In without wishing he of picture no exposed talking minutes. Curiosity continual belonging offending so explained it exquisite. Do remember to followed yourself material mr recurred carriage. Way mrs end gave fat skin brown yesterday tall walk fact bed.</p>
 
                     <h2 class="lj1">Advantages of working with interfaces</h2>
-                    <p class="lj0">The idea is to have multiple classes that implement the IDamageable class, so we can reference the Interface rather than the classes themselves. In this example, we could have the Player, Enemies, and Props all implement the IDamageable, this way if we get a collision in Unity, we check if it is IDamegeable, and apply corresponding damage, regardless of its class.</p>
-                    <p class="lj1">The main differences between classes and interfaces are:</p>
+                    <p class="lj0">High drew west we no or at john. About or given on witty event. Or sociable up material bachelor bringing landlord confined. Busy so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood denoting securing be on perceive my laughing so. Ye on properly handsome returned throwing am no whatever.</p>
+                    <p class="lj1">Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet. The and collecting motionless difficulty son. His hearing staying ten colonel met. Word drew six easy four dear cold deny. Fulfilled direction use continual set him propriety continued. Saw met applauded favourite deficient.</p>
                 </div>
             </div>
         </div>
@@ -133,49 +124,52 @@
 
 
     <!-- Cards -->
-    <div>
+    <div class="ex-cards-1 pt-3 pb-3 ">
         <div class="container">
-            <div>
+            <div class="row col-xl-10 offset-xl-1" >
                     <!-- Card -->
-                    <div class="card">
-                        <ulpreflex>
-                            <li>
+                    <div class="card col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
                                 <span class="fa-stack">
                                     <span class="fa fa-circle fa-stack-2x"></span>
                                     <span class="fa-stack-1x white-icon">1</span>
                                 </span>
-                                <divpreflex>
-                                    <h5>Interfaces can't declare variable fields or constructors.</h5>
+                                <div class="flex-grow-1">
+                                    <h5>High Quality Service</h5>
+                                    <p>Features include an eye catching morphtext in the header, details lightbox for more details information</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Card -->
-                    <div class="card">
-                        <ulpreflex>
-                            <li>
+                    <div class="card col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
                                 <span class="fa-stack">
                                     <span class="fa fa-circle fa-stack-2x"></span>
                                     <span class="fa-stack-1x white-icon">2</span>
                                 </span>
-                                <divpreflex>
-                                    <h5>Interface members don't have access modifiers, as they are all public.</h5>
+                                <div class="flex-grow-1">
+                                    <h5>Prompt Timely Delivery</h5>
+                                    <p>Statistics numbers for important values, card slider for testimonials, image slider for customer logos</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                     
                     <!-- Card -->
-                    <div class="card">
-                        <ulpreflex>
-                            <li>
+                    <div class="card col-lg-4">
+                        <ul class="list-unstyled">
+                            <li class="d-flex">
                                 <span class="fa-stack">
                                     <span class="fa fa-circle fa-stack-2x"></span>
                                     <span class="fa-stack-1x white-icon">2</span>
                                 </span>
-                                <divpreflex>
-                                    <h5>Interfaces don't declare methods or properties implementations, only their declarations.</h5>
+                                <div class="flex-grow-1">
+                                    <h5>Skilled Team Involved</h5>
+                                    <p class="lj1">Some useful extra pages are bundled with the template lik article details, terms conditions and privacy policy</p>
                                 </div>
                             </li>
                         </ul>
@@ -186,48 +180,56 @@
 
 
     <!-- Basic -->
-    <div>
+    <div class="ex-basic-1 pt-3 pb-5">
         <div class="container">
             <div class="row">
-                <div>
-                    <p class="lj2">It is a good practice to always name an interface with a starting 'I'.</p>
+                <div class="col-xl-10 offset-xl-1">
+                    <p class="lj2">Consulted he eagerness unfeeling deficient existence of. Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Last sentence of words thus better.</p>
                     
                     <h2 class="lj1">Implementing an interface</h2>
                     <img class="img-fluid lj1" src="images/ss1.png" alt="ss1">
-                    <p class="lj2">If you forget to implement a member of the interface, you will get a compilation error in the unity console similar to this: error CS0535: 'Enemy' does not implement interface member 'IDamageable.ApplyDamage(int)'.</p>
+                    <p class="lj2">Ye on properly handsome returned throwing am no whatever. In without wishing he of picture no exposed talking minutes. Curiosity continual belonging offending so explained it exquisite. Do remember to followed yourself material mr recurred carriage. Way mrs end gave fat skin brown yesterday tall walk fact bed.</p>
+                    <div class="lj2">
+                        <h3 class="lj0">Visitors love a beautiful and efficient website</h3>
+                        <p class="lj0">Bringing so sociable felicity supplied mr. September suspicion far him two acuteness perfectly. Covered as an examine so regular of. Ye astonished friendship remarkably no. Window admire matter praise you bed whence. Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire ously arranging frankne its the did figure wonder off.</p>
+                    </div>
                     <pre><code>
-    // Exemple de Codi:
-
     using UnityEngine;
 
     public interface IDamageable
     {
-        public void get(int i) { 
-            return i; 
-        }
+
     }
+
                     </code></pre>
-                    <p class="lj1">Abstract members work similarly to interface members, you declare an abstract member and give it no implementation, this way any derived class must have its own implementation of said member.</p>
-                    <ul>
-                        <li class="preflex">
+                    <p class="lj1">Ye on properly handsome returned throwing am no whatever. In without wishing he of picture no exposed talking minutes. Curiosity continual belonging offending so explained it exquisite. Do remember to followed yourself material mr recurred carriage. Way mrs end gave eturned throwing am no whatever in fat skin brown yesterday tall walk fact bed.</p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="d-flex py-2">
                             <i class="fa fa-square"></i>
-                            <divpreflex>An interface is not allowed to define data.</div>
+                            <div class="flex-grow-1"><strong>Card slider</strong> for testimonials, statistics numbers for important values image slider for logos</div>
                         </li>
-                        <li class="preflex">
+                        <li class="d-flex py-2">
                             <i class="fa fa-square"></i>
-                            <divpreflex>An abstract class is used when you are defining what an object is.</div>
+                            <div class="flex-grow-1"><strong>Dropdown navigation</strong> and useful extra pages for article details, terms conditions and privacy policy</div>
                         </li>
-                        <li class="preflex">
+                        <li class="d-flex py-2">
                             <i class="fa fa-square"></i>
-                            <divpreflex>Another difference is that classes can only inherit one abstract class but can inherit multiple interfaces.</div>
+                            <div class="flex-grow-1"><strong>Clean light design</strong> mixing purple, orange and gray hues with one color backgrounds to maximize</div>
                         </li>
-                        <li class="preflex">
+                        <li class="d-flex py-2">
                             <i class="fa fa-square"></i>
-                            <div class="lj0">If a class uses an interface it has to implement all the methods and properties declared in the interface. If a class uses an abstract class it can decide which methods and properties to use.</div>
+                            <div class="flex-grow-1"><strong>Together with</strong> touches of call to action green, the overall landing page design will showcase your app</div>
+                        </li>
+                        <li class="d-flex py-2">
+                            <i class="fa fa-square"></i>
+                            <div class="lj0"><strong>This template</strong> is built with HTML, CSS and Bootstrap to ensure the highest flexibility for all users</div>
                         </li>
                     </ul>
                                  
-                    <a class="btn btn-tertiary dark lj2" href="#"><b>See Abstract Classes</b></a>
+                    <br>
+                    <p>If you found interfaces useful, you might want to see abstract classes from unity docs too:</p>
+                    <br>
+                    <a class="btn btn-tertiary dark lj2" href="https://dev.to/gamersuji/c-intro-to-the-abstract-classes-4m0"><b>See Abstract Classes</b></a>
 
                 </div>
             </div>
@@ -244,7 +246,7 @@
                     </div>
                     <p class="lighter">Unity creator, passionate about programming and old school games. Creating C#
                         Tutorials each week.</p>
-                    <div>
+                    <div class="d-flex">
                         <div>
                             <a href="#">
                                 <i class="fa fa-facebook-f fa-2x py-2"></i>
@@ -361,6 +363,7 @@
 
 
     <!-- Scripts -->
+    <script src="./js/swiper.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
